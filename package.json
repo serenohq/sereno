@@ -1,0 +1,18 @@
+{
+  "private": true,
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "laravel-elixir": "^5.0.0",
+    "yargs": "^4.7.0"
+  },
+  "dependencies": {
+    "bootstrap": "next",
+    "highlightjs": "^9.8.0",
+    "jquery": "^3.1.1",
+    "tether": "^1.3.7"
+  },
+  "scripts": {
+    "start": "gulp watch",
+    "deploy": "sereno deploy"
+  }
+}

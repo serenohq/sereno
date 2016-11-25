@@ -1,0 +1,155 @@
+$color__salmon:         #ff574a !default;
+$color__darker_salmon:  #e74430 !default;
+$color__faint:          #f0f2f1 !default;
+$color__gray:           #525252 !default;
+$color__light_gray:     #aeaeae !default;
+$color__lighter_gray:   #dee0df !default;
+$color__teal:           #27b4a8 !default;
+
+.docs article {
+	padding: $spacer;
+
+	ul {
+		font-size: .875rem;
+	}
+
+	p {
+		font-size: .9rem;
+		line-height: 1.70;
+	}
+
+  h1 {
+    font-size: 3rem;
+    font-weight: lighter;
+  }
+
+	h1 + ul {
+		margin: 0;
+		padding: 0;
+    padding-top: 2rem;
+    padding-bottom: 2.5rem;
+    border-bottom: 1px solid $color__faint;
+
+    &, ul {
+  		list-style: none;
+  		font-size: 1rem;
+  		line-height: 1.5;
+  		-webkit-font-smoothing: antialiased;
+      color: lighten($color__salmon, 5%);
+    }
+
+		ul {
+			padding-left: 1.25rem;
+		}
+
+		li {
+			&:before {
+				content: "# ";
+				margin-right: .25em;
+				color: $color__salmon;
+			}
+		}
+
+    > ul {
+      padding-left: 1.25rem;
+    }
+	}
+
+	li > ul {
+		font-size: .9375rem;
+		font-weight: 400;
+		list-style: none;
+	}
+
+	h2:first-of-type {
+		margin-top: .9375rem;
+	}
+
+	h2 {
+		font-size: 1.875rem;
+		font-weight: 300;
+		margin-top: 3.25rem;
+
+		a,
+		a:hover {
+			color: $color__gray;
+			text-decoration: none;
+		}
+		a:before {
+			content: "#";
+			margin-left: -1rem;
+			font-size: 1.25rem;
+			color: $color__salmon;
+			opacity: .6;
+		}
+	}
+
+	h3 {
+		font-size: 1.5rem;
+		font-weight: 400;
+		margin-top: 2.75rem;
+	}
+
+	h4 {
+		font-size: 1rem;
+		font-weight: 700;
+		margin-top: 2.25rem;
+	}
+
+	a {
+		&:hover {
+    	text-decoration: underline;
+			color: darken($color__salmon, 10%);
+		}
+	}
+
+	blockquote a:hover {
+		color: lighten($color__salmon, 25%);
+	}
+
+	table {
+		border-collapse: collapse;
+		width: 100%;
+		font-size: .875rem;
+		th,
+		td {
+			border: 1px solid $color__lighter_gray;
+			padding: $spacer-x;
+			text-align: left;
+		}
+		th {
+			font-size: 16px;
+		}
+	}
+
+    blockquote {}
+}
+
+.docs-wrapper {
+	overflow: hidden;
+}
+
+.docs .sidebar {
+
+  h1 {
+    font-size: 1.25rem;
+    font-weight: normal;
+  }
+
+  h2 {
+    font-size: .875rem;
+    color: $color__light_gray;
+    padding-bottom: .5rem;
+    margin-bottom: .75rem;
+		margin-top: 1.5rem;
+    border-bottom: 1px dashed $color__lighter_gray;
+  }
+
+  ul {
+    list-style: none;
+    padding-left: 0;
+    li {}
+
+    a { color: lighten($color__salmon, 5%); }
+  }
+}

@@ -1,0 +1,15 @@
+{
+    "name": "znck/sereno",
+    "description": "A static site and blog generator",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Rahul Kadyan",
+            "email": "hi@znck.me"
+        }
+    ],
+    "require": {
+        "znck/sereno-core": "^0.1"
+    }
+}

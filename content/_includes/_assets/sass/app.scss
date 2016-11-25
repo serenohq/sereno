@@ -1,0 +1,13 @@
+@import "variables";
+@import "../../../../node_modules/bootstrap/scss/bootstrap";
+@import "../../../../node_modules/highlightjs/styles/tomorrow";
+@import "blog";
+@import "quotes";
+@import "tags";
+@import "code";
+@import "docs";
+@import "general";
+
+.sereno-logo {
+  height: 1.5rem;
+}

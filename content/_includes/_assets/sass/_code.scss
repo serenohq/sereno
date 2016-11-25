@@ -1,0 +1,17 @@
+pre {
+    background: darken(white, 2%);
+    padding: 1rem 1rem 1rem .75rem;
+    code {
+        counter-reset: line;
+        span.line {
+            &:before {
+                counter-increment: line;
+                content: counter(line);
+                padding-right: 1rem;
+                color: lighten(black, 80%);
+                font-weight: lighter;
+                user-select: none;
+            }
+        }
+    }
+}

@@ -1,0 +1,20 @@
+$brand-primary: #ff574a;
+$brand-secondary: #6c4f4d;
+
+$default-color: #525252;
+$border-color: #efefef;
+
+$enable-flex:               true !default;
+$enable-rounded:            false !default;
+$enable-shadows:            true !default;
+$enable-gradients:          false !default;
+$enable-transitions:        true !default;
+$enable-hover-media-query:  false !default;
+$enable-grid-classes:       true !default;
+$enable-print-styles:       true !default;
+
+$tags: (
+        laravel: #f4645f,
+        php: #4F5B93,
+        vue: #4fc08d,
+);
