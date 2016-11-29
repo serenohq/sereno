@@ -1,4 +1,6 @@
 /node_modules
 /vendor
 /_cache
+/public
 /.idea
+.DS_Store
