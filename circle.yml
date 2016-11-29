@@ -1,0 +1,31 @@
+machine:
+  php:
+    version: 7.0.4
+
+dependencies:
+  pre:
+    - curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
+    - echo "deb http://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
+    - sudo apt-get update && sudo apt-get install yarn
+  override:
+    - composer install --dev --no-interaction
+    - yarn
+  cache_directories:
+    - "~/.yarn-cache"
+    - "~/.composer/cache"
+
+test:
+  override:
+    - yarn run gulp
+
+deployment:
+  publish:
+    branch: master
+    commands:
+      - php sereno deploy
+
+general:
+  branches:
+    ignore:
+      - gh-pages # Ignore if project website.
+#      - master # Ignore if user/organisation website.

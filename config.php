@@ -28,20 +28,51 @@
     | Github Pages
     |--------------------------------------------------------------------------
     |
-    | The `branch` value is used to publish your website on Github Pages.
+    | Use Github Pages to publish your website for free.
     |
-    | Possible values for `branch`:
-    |   - master
-    |     For your personal website.
-    |     Name of the repository is `<your github username>.github.io`.
-    |     Your default working branch should be 'dev' (anything but not master).
-    |
-    |   - gh-pages
-    |     For project website.
-    |     Your default working branch should be 'master' (anything but not gh-pages).
     */
     'github' => [
-        'branch' => 'master',
+        /*
+        |--------------------------------------------------------------------------
+        | Repository
+        |--------------------------------------------------------------------------
+        |
+        | The `repository` where the project is hosted.
+        |
+        */
+        // 'repository' => 'git@github.com:user/repository.git',
+
+        /*
+        |--------------------------------------------------------------------------
+        | Branch
+        |--------------------------------------------------------------------------
+        |
+        | The `branch` value is used to publish your website on Github Pages.
+        |
+        | Possible values for `branch`:
+        |   - master
+        |     For your personal website.
+        |     Name of the repository is `<your github username>.github.io`.
+        |     Your default working branch should be 'dev' (anything but not master).
+        |
+        |   - gh-pages
+        |     For project website.
+        |     Your default working branch should be 'master' (anything but not gh-pages).
+        */
+        // 'branch' => 'gh-pages',
+
+        /*
+        |--------------------------------------------------------------------------
+        | Git User
+        |--------------------------------------------------------------------------
+        |
+        | Use this user to deploy built files. 
+        |
+        */
+        // 'user' => [
+        //     'name' => '',
+        //     'email' => '',
+        // ],
     ],
 
     /*
