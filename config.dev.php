@@ -5,8 +5,10 @@
      */
     'site_url' => '',
 
-    /*
-     * This is used to generate links with @url directive.
-     */
-    'base_url' => '/',
+    'sereno' => [
+        /*
+         * This is used to generate links with @url directive.
+         */
+        'url' => '/',
+    ],
 ];

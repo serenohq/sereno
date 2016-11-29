@@ -1,7 +1,8 @@
 ---
 view:
-  extends: _includes.index
+  extends: index
   yields: content
+bg: /assets/images/bg.png
 ---
 
 {#me}

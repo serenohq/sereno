@@ -1,5 +1,0 @@
-@each $tag, $color in $tags {
-  .tag-#{$tag} {
-    background-color: $color;
-  }
-}

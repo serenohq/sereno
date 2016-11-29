@@ -1,3 +1,143 @@
+
+.border-bottom {
+  border-bottom: 1px solid $border-color;
+}
+
+img {
+  max-width: 100%;
+}
+
+img.emoji {
+  display: inline;
+  height: 1.4em;
+}
+
+//
+// Style: Code Blocks
+//
+pre {
+    background: darken(white, 2%);
+    padding: 1rem 1rem 1rem .75rem;
+    code {
+        counter-reset: line;
+        span.line {
+            &:before {
+                counter-increment: line;
+                content: counter(line);
+                padding-right: 1rem;
+                color: lighten(black, 80%);
+                font-weight: lighter;
+                user-select: none;
+            }
+        }
+    }
+}
+
+//
+// Style: Block Quotes
+//
+
+blockquote {
+  background: #f9f9f9;
+  border-left: 10px solid #ccc;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+  quotes: "\201C""\201D""\2018""\2019";
+}
+
+blockquote:before {
+  color: #ccc;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+
+blockquote p {
+  display: inline;
+}
+
+
+//
+// Style: Blog
+//
+.post-banner {
+  width: 100%;
+  overflow: hidden;
+  img {
+    width: 100%;
+  }
+}
+
+.post-next {
+  padding: 3em 1em;
+  text-align: center;
+
+  background-color: white;
+  background-position: center;
+  background-size: cover;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: relative;
+  min-height: 320px;
+  &:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    background: rgba(0, 0, 0, 0.75);
+  }
+
+  .post-title {
+    position: relative;
+    font-size: 2.5rem;
+    z-index: 2;
+
+    a {
+      color: white;
+    }
+
+    small {
+      display: block;
+      text-align: left;
+      font-size: .8rem;
+      color: $brand-primary;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+    }
+  }
+}
+
+article.blog-post {
+  font-size: 1.2rem;
+  line-height: 1.618;
+  text-rendering: optimizeLegibility;
+  p {
+    color: $default-color;
+  }
+}
+
+.collection-list {
+  .active {
+    &:before {
+      margin-left: -1rem;
+      margin-right: 0.4rem;
+      content: "◦";
+    }
+  }
+}
+
+//
+// Style: Documentation
+//
 $color__salmon:         #ff574a !default;
 $color__darker_salmon:  #e74430 !default;
 $color__faint:          #f0f2f1 !default;
@@ -151,5 +291,14 @@ $color__teal:           #27b4a8 !default;
     li {}
 
     a { color: lighten($color__salmon, 5%); }
+  }
+}
+
+//
+// Style: Projects
+//
+@each $tag, $color in $tags {
+  .tag-#{$tag} {
+    background-color: $color;
   }
 }

@@ -1,12 +1,4 @@
 (function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
-'use strict';
-
-window.$ = window.jQuery = require('jquery');
-window.Tether = require('tether');
-
-require('bootstrap');
-
-},{"bootstrap":2,"jquery":3,"tether":4}],2:[function(require,module,exports){
 /*!
  * Bootstrap v4.0.0-alpha.5 (https://getbootstrap.com)
  * Copyright 2011-2016 The Bootstrap Authors (https://github.com/twbs/bootstrap/graphs/contributors)
@@ -3438,7 +3430,7 @@ var Popover = function ($) {
 
 }();
 
-},{}],3:[function(require,module,exports){
+},{}],2:[function(require,module,exports){
 /*!
  * jQuery JavaScript Library v3.1.1
  * https://jquery.com/
@@ -13660,7 +13652,7 @@ if ( !noGlobal ) {
 return jQuery;
 } );
 
-},{}],4:[function(require,module,exports){
+},{}],3:[function(require,module,exports){
 /*! tether 1.3.7 */
 
 (function(root, factory) {
@@ -15469,6 +15461,14 @@ return Tether;
 
 }));
 
-},{}]},{},[1]);
+},{}],4:[function(require,module,exports){
+'use strict';
+
+window.$ = window.jQuery = require('jquery');
+window.Tether = require('tether');
+
+require('bootstrap');
+
+},{"bootstrap":1,"jquery":2,"tether":3}]},{},[4]);
 
 //# sourceMappingURL=app.js.map

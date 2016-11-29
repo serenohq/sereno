@@ -1,13 +1,9 @@
+// Bootstrap
 @import "variables";
-@import "../../../../node_modules/bootstrap/scss/bootstrap";
-@import "../../../../node_modules/highlightjs/styles/tomorrow";
-@import "blog";
-@import "quotes";
-@import "tags";
-@import "code";
-@import "docs";
-@import "general";
+@import "../../../node_modules/bootstrap/scss/bootstrap";
 
-.sereno-logo {
-  height: 1.5rem;
-}
+// Code Highlight
+@import "../../../node_modules/highlightjs/styles/tomorrow";
+
+// Import theme styles.
+@import "default";
