@@ -2,7 +2,7 @@
 
 # About Sereno
 
-[![Join the chat at https://gitter.im/_sereno/Lobby](https://badges.gitter.im/_sereno/Lobby.svg)](https://gitter.im/_sereno/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+[![Join the chat at https://gitter.im/_sereno/sereno](https://badges.gitter.im/_sereno/sereno.svg)](https://gitter.im/_sereno/sereno?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 Sereno is a simple and powerful blog creation tool that allows
 you to share your stories with the world. With power of Laravel's
