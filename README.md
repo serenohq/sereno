@@ -2,6 +2,8 @@
 
 # About Sereno
 
+[![Join the chat at https://gitter.im/_sereno/Lobby](https://badges.gitter.im/_sereno/Lobby.svg)](https://gitter.im/_sereno/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 Sereno is a simple and powerful blog creation tool that allows
 you to share your stories with the world. With power of Laravel's
 Blade templating engine, it creates stunning websites and blogs.
