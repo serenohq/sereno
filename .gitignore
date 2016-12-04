@@ -3,4 +3,5 @@
 /_cache
 /public
 /.idea
+composer.lock
 .DS_Store
