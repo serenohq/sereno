@@ -10,6 +10,8 @@
         }
     ],
     "require": {
-        "znck/sereno-core": "^0.2"
+        "sereno/core": "^0.3.11",
+        "sereno/blog": "^0.1.0",
+        "sereno/docs": "^0.1.0"
     }
 }

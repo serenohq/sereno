@@ -52,18 +52,6 @@ github:
     branch: gh-pages
 
 #--------------------------------------------------------------------------
-# Markdown Configuration for Website
-#--------------------------------------------------------------------------
-#
-# The `extends` value sets the parent blade component for the markdown
-# renderer. And `yields` value places the content in the designated
-# place on the parent blade component.
-#
-view:
-    extends: markdown
-    yields: markdown-body
-
-#--------------------------------------------------------------------------
 # Blog
 #--------------------------------------------------------------------------
 #
@@ -186,11 +174,12 @@ sereno:
     # Extensions
     #--------------------------------------------------------------------------
     #
-    # Extensions add functionalities to Sereno. `DefaultExtension` provides
+    # Extensions add features to Sereno. `DefaultExtension` provides
     # all the features offered by Sereno.
     #
     extensions:
-        - Znck\Sereno\DefaultExtension::class,
+        - Sereno\Extension\BlogExtension
+        - Sereno\Extension\DocsExtension
 
     #--------------------------------------------------------------------------
     # Website Content Directories
@@ -227,3 +216,16 @@ sereno:
     #
     ignore:
       - .DS_Store
+
+
+    #--------------------------------------------------------------------------
+    # Markdown Configuration for Website
+    #--------------------------------------------------------------------------
+    #
+    # The `extends` value sets the parent blade component for the markdown
+    # renderer. And `yields` value places the content in the designated
+    # place on the parent blade component.
+    #
+    markdown:
+        extends: markdown
+        yields: markdown-body
